@@ -52,3 +52,19 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
   - Development Teams are cross-functional, with all of the skills as a team necessary to create a product increment;
   - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as whole.
   
+  # Development Team Size
+  * Fewer than three Development Team members decrease interaction and results in smaller productivity gains
+  * Smaller Development Teams may encounter skill constraint durint the Sprint, causing the Development Team to be unable to deliver a potentially releasable increment.
+  * Having more than nine members requires too  much coordination.
+  * Large Development Teams generate too much complexity for an empirical process to manage.
+  * The Product Owner and Scrum Master roles are not included in this count unless they are also executing the work of the Sprint Backlog.
+  
+  # The Scrum Master
+  
+  The Scrum Master is responsable for ensuring Scrum is understood and enacted. Scrum Masters do this by ensuring that the Scrum Team adheres to Scrum theory, practices and rules. He helps everyone change the interactions to maximize the value created by the Scrum Team.
+  
+ # Scrum Master -> Product Owner
+ - Finding techniques for effective Product Backlog management;
+ - Helping the Scrum Team understand the need for clear and concise Product Backlog items;
+ - 
+  
