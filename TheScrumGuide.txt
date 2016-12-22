@@ -1,4 +1,7 @@
-@SCRUM
+http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf#zoom=100
+
+@SCRUM   
+
 
 A framework within people can address complex adaptive problems, while productively creatively delivering products of the highest possible value.
 
@@ -50,5 +53,34 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
    The Development Team consists of professionals who do the work of delivering potentially releasable increment of "Done" product at the end of each Sprint.
   - They are self-organizing. No one tells the Development Team how to turn Product Backlog  into increments of potentially releasable functionality;
   - Development Teams are cross-functional, with all of the skills as a team necessary to create a product increment;
-  - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as whole.
+  - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as whole;
   
+  # Development Team Size
+  * Fewer than three Development Team members decrease interaction and results in smaller productivity gains
+  * Smaller Development Teams may encounter skill constraint durint the Sprint, causing the Development Team to be unable to deliver a potentially releasable increment.
+  * Having more than nine members requires too  much coordination.
+  * Large Development Teams generate too much complexity for an empirical process to manage.
+  * The Product Owner and Scrum Master roles are not included in this count unless they are also executing the work of the Sprint Backlog.
+  
+  # The Scrum Master
+  
+  The Scrum Master is responsable for ensuring Scrum is understood and enacted. Scrum Masters do this by ensuring that the Scrum Team adheres to Scrum theory, practices and rules. He helps everyone change the interactions to maximize the value created by the Scrum Team.
+  
+ # Scrum Master -> Product Owner
+ - Finding techniques for effective Product Backlog management;
+ - Helping the Scrum Team understand the need for clear and concise Product Backlog items;
+ - Understanding product planning in an empirical environment;
+ - Understanding and practicing agility;
+ - Facilitating Scrum events as requested or needed;
+ 
+ # Scrum Master -> Development Team
+ - Coaching the development team in self-organization and cross-functionality;
+ - Removing impediments to the development team's progress;
+ - Coaching the development team in organizational environments in which Scrum is not yet fully adopted and understood;
+ 
+ # Scrum Master -> Organization
+ - Leading and coaching the organization in its Scrum adoption;
+ - Planning Scrum implementations within the organization;
+ - Causing change that increases the productivity of the Scrum Team;
+ 
+ # SCRUM EVENTS
