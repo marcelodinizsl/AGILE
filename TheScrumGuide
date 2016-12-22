@@ -1,5 +1,3 @@
-The Scrum Guide - http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf#zoom=100
-
 @SCRUM
 
 A framework within people can address complex adaptive problems, while productively creatively delivering products of the highest possible value.
@@ -10,7 +8,7 @@ A framework within people can address complex adaptive problems, while productiv
 
 The Scrum framework consists of Scrum Teams and their associated roles, events, artifacts and rules
 
-#Scrum Theory
+#SCRUM THEORY
 Empiricism asserts that knowledge comes from experience and making decisions based on what is know.
 
 TRANSPARENCY + INSPECTION + ADAPTATION
@@ -28,3 +26,29 @@ ADAPTATION - An adjustment must be made as soon as possible to minimize futher d
 # SCRUM VALUES
 
 ScrumTeam(Commitment, Courage, Focus, Openness, Respect) -> (Transparency, Inspection, Adaptation)
+
+# SCRUM TEAM
+
+(Product Owner, Development Team, Scrum Master)
+Scrum Teams are self-organizing and Cross-Functional. (Designed flexibility, creativity and productivity). Scrum Teams deliver products iterarively and incrementally, maximizing opportunities for feedback.
+
+Self-Organizing Team - Choose how best to accomplish their work, rather than being directed by others outside the team.
+
+Cross-Functional Team - Have all competencies needed to accomplish the work without depending on others not part of the team.
+
+# PRODUCT OWNER
+ Is responsible for maximizing the value of the product and the work of the Development Team. He is the sole person responsible for managing the Product Backlog. 
+ The Product Owner may represent the desires of a committee in the Product Backlog, but those wanting to change a Product Backlog item's priority must address the Product Owner.
+ 
+ 
+ The product backlog management includes:
+  - Clearly expressing Product Backlog items;
+  - Ordering the items in the Product Backlog to best achieve goals and mission;
+  - Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum team will work on next;
+  
+  # DEVELOPMENT TEAM
+   The Development Team consists of professionals who do the work of delivering potentially releasable increment of "Done" product at the end of each Sprint.
+  - They are self-organizing. No one tells the Development Team how to turn Product Backlog  into increments of potentially releasable functionality;
+  - Development Teams are cross-functional, with all of the skills as a team necessary to create a product increment;
+  - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as whole.
+  
