@@ -1,6 +1,5 @@
 http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf#zoom=100
 
-@SCRUM   
 
 A framework within people can address complex adaptive problems, while productively creatively delivering products of the highest possible value.
 
