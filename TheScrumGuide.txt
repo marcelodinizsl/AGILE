@@ -17,7 +17,7 @@ TRANSPARENCY + INSPECTION + ADAPTATION
 
 TRANSPARENCY - Aspects of the process must be visible to those responsible for the outcome. (Common definition of "Done")
 
-INSPECTION - Scrum users must frequently inspect Scrum artifacts and progress toward a Sprint Goal to detec  undesirable variances. 
+INSPECTION - Scrum users must frequently inspect Scrum artifacts and progress toward a Sprint Goal to detect undesirable variances. 
 
 ADAPTATION - An adjustment must be made as soon as possible to minimize futher deviation.
 	* Sprint Planning
@@ -42,26 +42,25 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
  Is responsible for maximizing the value of the product and the work of the Development Team. He is the sole person responsible for managing the Product Backlog. 
  The Product Owner may represent the desires of a committee in the Product Backlog, but those wanting to change a Product Backlog item's priority must address the Product Owner.
  
- 
  The product backlog management includes:
   - Clearly expressing Product Backlog items;
   - Ordering the items in the Product Backlog to best achieve goals and mission;
   - Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum team will work on next;
   
-  # DEVELOPMENT TEAM
+# DEVELOPMENT TEAM
    The Development Team consists of professionals who do the work of delivering potentially releasable increment of "Done" product at the end of each Sprint.
   - They are self-organizing. No one tells the Development Team how to turn Product Backlog  into increments of potentially releasable functionality;
   - Development Teams are cross-functional, with all of the skills as a team necessary to create a product increment;
   - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as whole;
   
-  # Development Team Size
+# Development Team Size
   * Fewer than three Development Team members decrease interaction and results in smaller productivity gains
   * Smaller Development Teams may encounter skill constraint durint the Sprint, causing the Development Team to be unable to deliver a potentially releasable increment.
   * Having more than nine members requires too  much coordination.
   * Large Development Teams generate too much complexity for an empirical process to manage.
   * The Product Owner and Scrum Master roles are not included in this count unless they are also executing the work of the Sprint Backlog.
   
-  # The Scrum Master
+# The Scrum Master
   
   The Scrum Master is responsable for ensuring Scrum is understood and enacted. Scrum Masters do this by ensuring that the Scrum Team adheres to Scrum theory, practices and rules. He helps everyone change the interactions to maximize the value created by the Scrum Team.
   
@@ -83,3 +82,13 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
  - Causing change that increases the productivity of the Scrum Team;
  
  # SCRUM EVENTS
+  Prescribed events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum. All events are time-boxed events, such that every has a maximum duration.
+  The Sprint is a container for all events and each event in scrum is a formal opportunity to inspect and adapt something
+  
+ $ The Sprint
+  Is the heart of scrum, a time-box of one month or less during which a "Done", usable, and potentially releasable product increment is created.
+  Sprint -> Sprint planning, daily Scrums, the development work, the sprint review and the sprint retrospective.
+  Each sprint as a definition of what  is to be built, a desing and flexible plan that will guide building it, the work and the result product.
+  
+ $ Cancelling a Sprint
+ A sprint would be cancelled if the sprint goal becomes obsolete. This might occur if the company changes direction of if the market or technology conditions change. In general, a sprint should be cancelled if it no longer makes sense given the circumstances. But, due to the short duration of Sprints, cancellation rarely makes sense.
