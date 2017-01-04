@@ -92,3 +92,17 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
   
  $ Cancelling a Sprint
  A sprint would be cancelled if the sprint goal becomes obsolete. This might occur if the company changes direction of if the market or technology conditions change. In general, a sprint should be cancelled if it no longer makes sense given the circumstances. But, due to the short duration of Sprints, cancellation rarely makes sense.
+ Went a Sprint is cancelled, any completed and "Done" product backlog items are reviewed. If part of the work is potentially releaseable, the product owner typically accepts. All incomplete product backlog items are re-estimated and put back on the product backlog.
+ Sprint cancellations are often traumatic to the Scrum Team, and are very uncommon.
+ 
+ $ Sprint Planning
+ 
+ sprint Plannling is time-boxed to a maximum of eight hours for a one-month Sprint. For shorter Sprints, the event is usually shorter. This plan is created by the collaborative work of the entire Scrum Team.
+ Sprint planning answers the following:
+ 
+  - What can be delivered in the increment resulting from the upcoming Sprint ?
+   * After the development team forecasts the product backlog items it will deliver in the Sprint, the scrum team crafts a sprint goal. The sprint is an objective that will be met within the Sprint through the implementation of the product backlog, and it provides guidance to the development team on why it is building the increment.
+   
+  - How will the work needed to deliver the increment be achieved?
+   * Having set the sprint goal and selected the product backlog items for the sprint, the development team decides how it will build this functionality into a "Done" product increment during the sprint. The product backlog items selected for this sprint plus the plan for delivering them is called the sprint backlog. The work planned for the first days of the sprint by the development team is decomposed by the end of this meeting, often to  units of one day or less. By the end of the sprint  planning, the development team should be able to explain to the product owner and scrum master how it intends to work as a self-organizing team to accomplish the sprint goal and create the anticipated increment.
+  
