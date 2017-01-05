@@ -105,4 +105,42 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
    
   - How will the work needed to deliver the increment be achieved?
    * Having set the sprint goal and selected the product backlog items for the sprint, the development team decides how it will build this functionality into a "Done" product increment during the sprint. The product backlog items selected for this sprint plus the plan for delivering them is called the sprint backlog. The work planned for the first days of the sprint by the development team is decomposed by the end of this meeting, often to  units of one day or less. By the end of the sprint  planning, the development team should be able to explain to the product owner and scrum master how it intends to work as a self-organizing team to accomplish the sprint goal and create the anticipated increment.
+   
+   $ Sprint Goal
+   
+   The sprint goal is an objective set for the Sprint that can be met through the implementation of Product Backlog. It's gives the Development Team  some flexibility regarding the functionality implemented within the Sprint.
+   As the Development Team works, it keeps the Sprin Goal in mind. In order to satisfy the Sprint goal, it implements the functionality and technology. If the work turns out to be different than the Development Team expected, they collaborate with the Product Owner negotiate the scope of Sprint backlog within the Sprint.
+   
+   $ Daily Scrum
+   It's a 15 minute time-boxed event for the Development Team to synchronize activites and create a plan for the next 24 hours. this is done by inspecting the work since the last Daily Scrum and forecasting the work that could be done before the next one.
+   
+   During the meeting, the development team members explain:
+   
+   * What did I do yesterday that helped the development team meet the sprint goal?
+   * What will I do today to help the development team meet the sprint goal?
+   * Do I see any impediment that prevents me or the development team from meeting the sprint goal?
+   
+   The development team uses the Daily scrum to inspect progress toward the sprint goal and to inspect how progress is trending toward completing the work in the sprint backlog. The Daily Scrum optimizes the probability that the development team will meet the sprint goal. Every day, the development team should understand how it intends to work together as a self-organizing team to accomplish the sprint goal and create the anticipated increment by the end of the sprint.
+   
+   $Sprint Review
+   It's held at the end of the sprint to inspect the increment and adapt the product backlog if needed. During the sprint review, the scrum team and stakeholders collaborate about what was done in the sprint. This is an informal meeting, not a status meeting, and the presentation of the increments is intended to elicit feedback and foster collaboration. This is a four-hour time-boxed meeting for one-month sprints.
+   
+   The sprint review includes the following elements:
+   * Attendees include the scrum team and key stakeholders invited by the product owner;
+   * The product owner explains what product backlog items have been "Done" and what has not been "Done";
+   * The development team demonstrates the work that is has "Done" and answers questions about the increment;
+   * The entire group collaborates on what to do next, so that the sprint review provides valuable input to subsequent sprint planning;
+   
+   $Sprint Retrospective
+   It's an opportunity for the scrum team to inspect itself and create a plan for improvements to be enacted during the next sprint. It's occurs after the sprint review and prior to the next sprint planning.
+   This is a three-hour time-boxed meetin for one-month sprints.
+   
+   The purpose of the sprint retrospective is to:
+   * Inspect how the last sprint went with regards to people, relationships, process and tools;
+   * Identify and order the major items that went well and potential improvements;
+   * Create a plan for implementing improvements to the way the scrum team does its work;
+   
+   During each sprint retrospective, the scrum team plans ways to increase product quality by adapting the definition of "Done" as appropriate. By the end of the sprint retrospective, the scrum team should have indentified improvements that will implement in the next sprint and this is the adaptation to the inspection of the scrum team itseal.
+  
+  # SCRUM ARTIFACTS
   
