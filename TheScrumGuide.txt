@@ -38,7 +38,8 @@ Self-Organizing Team - Choose how best to accomplish their work, rather than bei
 
 Cross-Functional Team - Have all competencies needed to accomplish the work without depending on others not part of the team.
 
-# PRODUCT OWNER
+$ PRODUCT OWNER
+
  Is responsible for maximizing the value of the product and the work of the Development Team. He is the sole person responsible for managing the Product Backlog. 
  The Product Owner may represent the desires of a committee in the Product Backlog, but those wanting to change a Product Backlog item's priority must address the Product Owner.
  
@@ -47,50 +48,54 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
   - Ordering the items in the Product Backlog to best achieve goals and mission;
   - Ensuring that the Product Backlog is visible, transparent, and clear to all, and shows what the Scrum team will work on next;
   
-# DEVELOPMENT TEAM
+$ DEVELOPMENT TEAM
+
    The Development Team consists of professionals who do the work of delivering potentially releasable increment of "Done" product at the end of each Sprint.
   - They are self-organizing. No one tells the Development Team how to turn Product Backlog  into increments of potentially releasable functionality;
   - Development Teams are cross-functional, with all of the skills as a team necessary to create a product increment;
   - Individual Development Team members may have specialized skills and areas of focus, but accountability belongs to the Development Team as whole;
   
-# Development Team Size
+ Development Team Size
   * Fewer than three Development Team members decrease interaction and results in smaller productivity gains
   * Smaller Development Teams may encounter skill constraint durint the Sprint, causing the Development Team to be unable to deliver a potentially releasable increment.
   * Having more than nine members requires too  much coordination.
   * Large Development Teams generate too much complexity for an empirical process to manage.
   * The Product Owner and Scrum Master roles are not included in this count unless they are also executing the work of the Sprint Backlog.
   
-# The Scrum Master
+$ The Scrum Master
   
   The Scrum Master is responsable for ensuring Scrum is understood and enacted. Scrum Masters do this by ensuring that the Scrum Team adheres to Scrum theory, practices and rules. He helps everyone change the interactions to maximize the value created by the Scrum Team.
   
- # Scrum Master -> Product Owner
+  Scrum Master -> Product Owner
  - Finding techniques for effective Product Backlog management;
  - Helping the Scrum Team understand the need for clear and concise Product Backlog items;
  - Understanding product planning in an empirical environment;
  - Understanding and practicing agility;
  - Facilitating Scrum events as requested or needed;
  
- # Scrum Master -> Development Team
+  Scrum Master -> Development Team
  - Coaching the development team in self-organization and cross-functionality;
  - Removing impediments to the development team's progress;
  - Coaching the development team in organizational environments in which Scrum is not yet fully adopted and understood;
  
- # Scrum Master -> Organization
+  Scrum Master -> Organization
  - Leading and coaching the organization in its Scrum adoption;
  - Planning Scrum implementations within the organization;
  - Causing change that increases the productivity of the Scrum Team;
  
  # SCRUM EVENTS
+ 
   Prescribed events are used in Scrum to create regularity and to minimize the need for meetings not defined in Scrum. All events are time-boxed events, such that every has a maximum duration.
   The Sprint is a container for all events and each event in scrum is a formal opportunity to inspect and adapt something
   
  $ The Sprint
+ 
   Is the heart of scrum, a time-box of one month or less during which a "Done", usable, and potentially releasable product increment is created.
   Sprint -> Sprint planning, daily Scrums, the development work, the sprint review and the sprint retrospective.
   Each sprint as a definition of what  is to be built, a desing and flexible plan that will guide building it, the work and the result product.
   
  $ Cancelling a Sprint
+ 
  A sprint would be cancelled if the sprint goal becomes obsolete. This might occur if the company changes direction of if the market or technology conditions change. In general, a sprint should be cancelled if it no longer makes sense given the circumstances. But, due to the short duration of Sprints, cancellation rarely makes sense.
  Went a Sprint is cancelled, any completed and "Done" product backlog items are reviewed. If part of the work is potentially releaseable, the product owner typically accepts. All incomplete product backlog items are re-estimated and put back on the product backlog.
  Sprint cancellations are often traumatic to the Scrum Team, and are very uncommon.
@@ -112,6 +117,7 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
    As the Development Team works, it keeps the Sprin Goal in mind. In order to satisfy the Sprint goal, it implements the functionality and technology. If the work turns out to be different than the Development Team expected, they collaborate with the Product Owner negotiate the scope of Sprint backlog within the Sprint.
    
    $ Daily Scrum
+   
    It's a 15 minute time-boxed event for the Development Team to synchronize activites and create a plan for the next 24 hours. this is done by inspecting the work since the last Daily Scrum and forecasting the work that could be done before the next one.
    
    During the meeting, the development team members explain:
@@ -123,6 +129,7 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
    The development team uses the Daily scrum to inspect progress toward the sprint goal and to inspect how progress is trending toward completing the work in the sprint backlog. The Daily Scrum optimizes the probability that the development team will meet the sprint goal. Every day, the development team should understand how it intends to work together as a self-organizing team to accomplish the sprint goal and create the anticipated increment by the end of the sprint.
    
    $Sprint Review
+   
    It's held at the end of the sprint to inspect the increment and adapt the product backlog if needed. During the sprint review, the scrum team and stakeholders collaborate about what was done in the sprint. This is an informal meeting, not a status meeting, and the presentation of the increments is intended to elicit feedback and foster collaboration. This is a four-hour time-boxed meeting for one-month sprints.
    
    The sprint review includes the following elements:
@@ -132,6 +139,7 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
    * The entire group collaborates on what to do next, so that the sprint review provides valuable input to subsequent sprint planning;
    
    $Sprint Retrospective
+   
    It's an opportunity for the scrum team to inspect itself and create a plan for improvements to be enacted during the next sprint. It's occurs after the sprint review and prior to the next sprint planning.
    This is a three-hour time-boxed meetin for one-month sprints.
    
@@ -143,4 +151,39 @@ Cross-Functional Team - Have all competencies needed to accomplish the work with
    During each sprint retrospective, the scrum team plans ways to increase product quality by adapting the definition of "Done" as appropriate. By the end of the sprint retrospective, the scrum team should have indentified improvements that will implement in the next sprint and this is the adaptation to the inspection of the scrum team itseal.
   
   # SCRUM ARTIFACTS
+  
+  Scrum's artifacts represent work or value to provide transparency and opportunities for inspection and adaptation. Artifacts defined by scrum are specifically designed to maximize transparency of key information so that everybody has the same understanding of the artifac.
+  
+  $ Product Backlog
+  
+  The product backlog is an ordered list of everything that might be needed in the product and is the single source of requirements of any changes to be made to the product and it's never complete, is dynamic. It constantly changes to identify what the product need to be appropriate, competitive and useful. As long as a product exists, its Product Backlog also exists.
+  The product Backlog lists all features, functions, requirements, enchancements, and fixes that constitute the changes to be made to the product in future releases. It's items have the attributes of a description, order, estimate and value. Changes in business requirements, market conditions, or technology may cause changes in the product backlog.
+  Product backlog refinement is the act of adding detail, estimates, and order to items in the product backlog. The development team is responsable for all estimates.
+  
+  $ Monitoring Progress Toward a Goal
+  
+  At any point in time, the total work remaining to reach a goal can be summed. This information is made transparent to all stakeholders. Various projective practices upon trending have been used to forecast progress, like burn-downs, burn-ups, or cumulative flows.
+  
+  $ Sprint Backlog
+  
+  The sprint backlog is the set of product backlog items selected for the sprint, plus a plan for delivering the product increment and realizing the sprint goal. It's a forecast by the development team about what functionality will be in the next increment and the work needed to deliver that functionality into a "Done" increment.
+  It's a plan with enough detail that changes in progress can be understood in the Daily Scrum. It's a highly visible, real-time picture of the work that the development team plans to accomplish during the sprint, and it belongs solely to the development team.
+  
+  $ Increment
+  
+  The increment is the sum of all product backlog items completed during a sprint and the value of the increments of all previous sprints. At the end of a Sprint, the new increment must be "Done", which means it must be in useable condition and meet the scrum team's definition of "Done".
+  
+  # ARTIFACT TRANSPARENCY
+  
+  Scrum relies on transparency. Desicions to optimize value and control risk are made based on the perceived state of the artifacts. A scrum master can detect incomplete transparency by inspecting the artifacts, sensing patterns, listening closely to what is being said, and detecting differences between expected and real results.
+  
+  $ Definition of "Done"
+  
+  When a product backlog item or an increment is described as"Done", everyone must understand what "Done" means. Although this varies significantly per Scrum team, members must have a shared understanding of what it means for work to be complete, to ensure transparency.
+  The purpose of each sprint is to deliver increments of potentially releasable functionality that adhere to the scrum team's current definition of "Done".
+  Development teams deliver an increment of product functionality every sprint. This increment is useable, so a product owner may choose to immediately release it. If the definition of "done" for an increment is part of the convetions, standards or guidelines of the  development organization, all scrum teams must follow it as a minimum.
+  Each increment is additive to all prior increments and thoroughly tested, ensuring that all increments work together.
+  
+  Any one product system should have a definition of "Done" that is a standard for any work done on it.
+  
   
