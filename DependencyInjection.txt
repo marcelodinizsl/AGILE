@@ -81,4 +81,8 @@ $ ABSTRACT FACTORY PATTERN
 One of the problems that can arise from using the simple factory pattern in a large application is that it can be difficult to maintain consistency. The application may include multiple store classes such as SurveyStore, LogoStore and ReportStore classes in addition to the TenantStore classe.
 The abstract factory pattern is useful if you have a requirement to create families of related objects in a consistent way.
 
+$ SERVICE LOCATOR PATTERN
 
+Using a service locator provides another variation to this general approach of using another class to create objects on you behalf. It's like as a registry that you can look up an instance of an object or service that another class in your application created and registered with the service locator. The service locator might support querying for objects by a string key or by interface type.
+
+Often, in constrast to the factory patterns where the factory creates the object but gives responsability for managing the lifetime to the client class, the service locator is responsable for managing the lifetime of the object and simply returns a reference to the client. Also, factories are typically responsible for creating instances of specific types or families of types as in the case of the abstract factory pattern, while a service locator may be capable of returning a reference to an object of any type in the application.
