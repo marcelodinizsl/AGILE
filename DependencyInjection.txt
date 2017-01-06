@@ -51,3 +51,34 @@ public class SQLManagment: Management
 
 This approach results in a flexible and extensible design and impements the open/closed principle. However, it does not result in a maintainable solution because all the client classes that use the TenantStore class are still responsable for instantiating TenantStore instances correctly and consistently. It is also still difficult to test the Management class because it depends on the TeanantStore type.
 One approach to testing would be to create a MockManagement type that derives from Management and that uses a mock storage implementation to return test data: in other words you must create two mock types to manage testing.
+
+$ Single Factory PATTERN
+
+While the factory method pattern does not remove the dependencies from the high-level client class, such as the Management class, on the low-level, you can achieve this with the simple factory pattern.
+
+public class Management
+{
+  private readonly ITenantStore tenantStore;
+  
+  public Management()
+  {
+	var tenantStoreFactory =  new TenantStoreFactory();
+	this.tenantStore = tenantStoreFactory.CreateTenantStore();
+  }
+  
+  public ActionResult Index()
+  {
+	var mode = this.tenantStore.GetTenantNames();
+	
+	return this.View(model);
+  }
+}
+
+This approach removes much of the complexity from the high-level Management class, although in this example the Management class is still responsible for selecting the specific type of tenant store to use. We could easily move this logic into the factory class that could read a configuration setting to determine whether to create a Blob or a Sql instance. Making the factory class responsable for selecting the specifif type to create  makes it easier to apply a consistent approach throughout the application.
+
+$ ABSTRACT FACTORY PATTERN
+
+One of the problems that can arise from using the simple factory pattern in a large application is that it can be difficult to maintain consistency. The application may include multiple store classes such as SurveyStore, LogoStore and ReportStore classes in addition to the TenantStore classe.
+The abstract factory pattern is useful if you have a requirement to create families of related objects in a consistent way.
+
+
