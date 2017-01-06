@@ -1,0 +1,53 @@
+https://msdn.microsoft.com/en-us/library/dn223671(v=pandp.30).aspx
+@ DEPENDENCY INJECTION
+
+Loose Coupling - It's a opposed to tight coupling, means reducing the number of dependencies between the components that make up your system. This makes it easier and safer to make changes in one area of the system because each part of the system is largely independent of the other.
+
+It's possible address some of the most of the most common requirements in enterprise applications by adopting a loosely design to minimize the dependencies between the different part of your application. However, if a class does not directly instantiate the other that it needs, some other class or component must take on this responsibility. We can use patterns that you can use to manage how objects are instantiated in our application before focusing specifically on dependency injection as the mechanism to use in enterprise applications.
+
+Factories, service locators and depen injection are all approaches you can take to move the responsibility for instantiating and managing objects on behalf of other client objects.
+
+# FACTORY PATTERNS
+
+There are three common factory patterns 
+- The Factory Method
+- Abstract Factory patterns
+- Simple Factory PATTERNS
+
+$ THE FACTORY METHOD PATTERN
+
+This pattern enables you to modify the behavior of a class without modifying the class itself by using inheritance.
+
+public class Managment
+{
+   protected ITenantStore tenantStore;
+   
+   public Management()
+   {
+      this.tenantStore = CreateTenantStore();
+   }
+   
+   protected virtual ITenantStore CreateTrenantStore()
+   {
+	  return new TenantStore();
+   }
+   
+   public ActionResult Index()
+   {
+      var model = this.tenantStore.GetTenantNames();
+	  
+	  return this.View(model);
+   }
+}
+
+public class SQLManagment: Management
+{
+   protected override ITenantStore CreateTenantStore()
+   {
+      ...
+	  return SQLTenantStore();
+   }
+}
+
+This approach results in a flexible and extensible design and impements the open/closed principle. However, it does not result in a maintainable solution because all the client classes that use the TenantStore class are still responsable for instantiating TenantStore instances correctly and consistently. It is also still difficult to test the Management class because it depends on the TeanantStore type.
+One approach to testing would be to create a MockManagement type that derives from Management and that uses a mock storage implementation to return test data: in other words you must create two mock types to manage testing.
