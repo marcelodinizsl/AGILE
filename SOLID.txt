@@ -1,0 +1,32 @@
+# PRINCIPLES OF OBJECT-ORIENTED DESIGN
+
+SOLID is an acronym that refers to the following principles:
+
+S - Single responsibility principles
+O - Open/Close principle
+L - Liskov substitution principle
+I - Interface segregation principle
+D - Dependency inversion principle
+
+# SINGLE RESPONSIBILITY PRINCIPLES
+
+The single responsibility principle states that a class should have one, and only one, reason to change.
+
+# THE OPEN/CLOSED PRINCIPLES
+
+The open/closed principle states that "software entities (classes, modules, functions and so on) should be open for extension, but closed for modification". Although you might modify the code in a class to fix a defect, you should extend a class if you wnat to add any new behavior to it. This helps to keep the code maintainable and testable because existing behavior should not change, and any new behavior exists in new classes. The requirement to be able to add support for crosscutting concerns to your application can best be met by following the open/closed principal.
+
+# THE LISKOV SUBSTITUTION PRINCIPLES
+
+The liskov substitution principle in object-oriented programming states that in a computer program, if S is a subtype of T, then objects of type T may be replaced with objects of type S without altering any of the desirable properties, such as correctness, of that program.
+
+# INTERFACE SEGREGATION PRINCIPLE
+
+It's a software development  principle intended to make software more maintainable. The interface segregation principle encourages loose coupling and therefore makes a system easier to refactor, change and redeploy.
+The principle states that interfaces that are very large should be split into smaller and more specific ones so that client classes only need to know about the methods that they use: no client class should be forced to depend on methods it does not use.
+
+# DEPENDENCY INVERSION PRINCIPLE
+
+It's principle states that:
+* High-level modules should not depend on low-level modules. Both should depend on abstractions.
+* Abstractions should not depend upon details. Details should depend upon abstractions.
