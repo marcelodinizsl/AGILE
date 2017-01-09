@@ -86,3 +86,33 @@ $ SERVICE LOCATOR PATTERN
 Using a service locator provides another variation to this general approach of using another class to create objects on you behalf. It's like as a registry that you can look up an instance of an object or service that another class in your application created and registered with the service locator. The service locator might support querying for objects by a string key or by interface type.
 
 Often, in constrast to the factory patterns where the factory creates the object but gives responsability for managing the lifetime to the client class, the service locator is responsable for managing the lifetime of the object and simply returns a reference to the client. Also, factories are typically responsible for creating instances of specific types or families of types as in the case of the abstract factory pattern, while a service locator may be capable of returning a reference to an object of any type in the application.
+
+Any classes that retrieve object references or service references from the service locator will  have a dependency on the service locator itself.
+
+$ DEPENDENCY INJECTION
+
+A common feature of the all the factory patterns and the service locator pattern, is that it is still the high-level client object's responsability to resolve its own dependencies by requesting the specific of the types that it needs.
+
+They each adopt a pull model of varying degrees of sophistication, assigning various responsabilities to the factory or service locator. The pull model also means that the high-level client class has a dependency on the class that is responsible for creating of locating the object it wants to use. This also means that the dependencies of the high-level client are hidden inside of those classes rather specified in a single location, making them harder to test.
+
+Dependency injection takes the opposite approach, adopting a push model in place of the pull model. Inversion of Control is a term that's often used to describe this push model and dependency injection is one specific implementation of the inversion of control technique.
+With dependency injection, another class is responsible for injecting (pushing) the dependencies into the high-level client classes, at the runtime.
+
+Martin Fowler -> With service locator the application class asks for it explicity by a message to the locator. With injection there is no explicit request, the service appears in the application class - hence the inversion of control."
+
+public class Management
+{
+	private readonly ITenantStore tenantStore;
+	
+	public Management(ITenantStore tenantStore)
+	{
+		this.tenantStore = tenantStore;
+	}
+	
+	public ActionResult Index()
+	{
+		var model = this.tenantStore.GetTenantNames();
+		...
+		return this.View(model);
+	}
+}
