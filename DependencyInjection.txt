@@ -126,3 +126,24 @@ The Management constructor receives an ITenantStore instance as a parameter, inj
 	$ OBJECT LIFETIME
 	
 	You should determine when to create the objects in your application based on criteria such as which object is responsible for managing the state, is the object shared, and how long the object will live for. Depending on the specific requirements and structure of your application, you might want each client class to have its own ITenantStore object, or have all the client classes share the same ITenantStore instance, or for different groups of client each have their own ITenantStore instance.
+	Whichever way you create an object, there is always a trade-off between performance and resource utilization when you decide where to instantiate it.
+
+	# TYPES OF INJECTION
+	
+	Typically, when  you instantiate an object you invoke a class constructor and pass any values that the object needs as parameters to the constructor.
+	In the example above, is a constructor injection and is the type of injection most common. There are other types of injection such as property setter injection and method call injection, but they are less commonly used.
+	
+	$ PROPERTY SETTER INJECTION
+	
+	As an alternative or in addition to passing a parameter to a constructor, you may want to set a property value when instantiate a object in your application.
+	
+	public class AzureTable<T>
+	{
+		public AzureTable(StorageAccount account) : this (account, typeof(T).Name)
+		{}
+		
+		public IAzureTableRWSStrategy ReadWriteStrategy
+		{get;set;}
+	}
+	
+	Notice that the constructors are not responsible for setting the read/write strategy and that the type of the ReadWriteStrategy property is an interface type. You should only use property setter injection if the class has a usable default
