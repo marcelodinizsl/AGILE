@@ -116,3 +116,13 @@ public class Management
 		return this.View(model);
 	}
 }
+
+The Management constructor receives an ITenantStore instance as a parameter, injected by some other class. The only dependency in the Management class in on the interface type. The class that is responsible for instantiating the TenanStore object and inserting it into the Management class is called the DependencyInjectionContainer class. Using a container is easier and provides additional capabilities such as lifetime management, interception and registration by convention.
+	
+	$ OBJECT COMPOSITION
+	
+	Your application requires a class or  component that is responsible for instantiating all the required objects and passing them into the correct constructors, methods, and properties: your application must know how to compose its object graph before it can perform any work. This must happen very early in the application's lifecycle: The Main method of a console application, in the Global.asax in a web application, in a role's OnStart method in a Windows Azure application, or in the initialization code for a test method.
+	
+	$ OBJECT LIFETIME
+	
+	You should determine when to create the objects in your application based on criteria such as which object is responsible for managing the state, is the object shared, and how long the object will live for. Depending on the specific requirements and structure of your application, you might want each client class to have its own ITenantStore object, or have all the client classes share the same ITenantStore instance, or for different groups of client each have their own ITenantStore instance.
