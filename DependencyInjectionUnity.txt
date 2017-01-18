@@ -11,3 +11,31 @@ Something in the applications is instantiating both that object and the Manageme
 
 The Unity container can manage this register, resolve, dispose cycle making it easy to use dependency injection in your applications. Typically, you perform the registration of the types that require dependency injection in a single method in your application; your should invoke this method early in your application's lifecycle to ensure that the application is aware of all off the dependencies between its classes. You should always try to write container-agnostic code (except for the one place at the root of the application where you configure the container) in order to decouple your application from the specific dependency injection container you are using.
 
+$Register
+Using the Unity container, you can register a set of  mappings that determine what concrete type you require when a constructor (or property or method) identifies the type to be injected by an interface type or base class type.
+
+public Management(ITenanStore tenantStore)
+{
+	this.tenantStore = tenantStore;
+}
+
+Shows how you could create a new Unity container and then register theh concrete type to use when a Management instance requires an ITenantStore instance.
+
+var container = new UnityContainer();
+container.RegisterType<ITenantStore,TenantStore>();
+
+The RegisterType method shown here tells the container to instantiate a TenantStore object when it instantiates an object that requires an injection of ITenantStore instance through a constructor, or method or property.
+
+$Resolve
+The usage of the RegisterType method shown the mapping between the interface type used in the client class and the conrete type that we want to use in the application. To instantiate the Management and TenantStore object :
+
+var management = container.Resolve<Management>();
+
+The Unity container is the responsable for instantiate and resolve any dependencies.
+
+$Dispose
+When the management variable goes out of scope and becomes eligible for garbage collection, the TenantStore object will also be eligible for garbage collection.
+
+$Registering and resolving in your code
+The motivation for loosely coupled desing and dependency injection was maintainability. For this, dependency injection can help to create more maintainable solutions is by describing, in a single location, how to compose your application from all of its constituent classes and components. From the perspective of Unity, this is the type registration information. Therefore, it makes sense to group all of the type registration together in a single method that you invoke very early on in your application's lifecycle; usually, directly in the application's entry point.
+Typically, you can call the Resolve method when you need an instance of a particular type in your application
