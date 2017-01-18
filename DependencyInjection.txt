@@ -146,4 +146,36 @@ The Management constructor receives an ITenantStore instance as a parameter, inj
 		{get;set;}
 	}
 	
-	Notice that the constructors are not responsible for setting the read/write strategy and that the type of the ReadWriteStrategy property is an interface type. You should only use property setter injection if the class has a usable default
+	Notice that the constructors are not responsible for setting the read/write strategy and that the type of the ReadWriteStrategy property is an interface type. 
+	You should only use property setter injection if the class has a usable default value for the property. While you cannot forget to call a constructor, you can forget to set a property such as the ReadWriteStrategy property in the example above.
+You should use property setter injection when the dependency is optional. However don't use property setter injection as a technique to avoid polluting your constructor with multiple dependencies; too many dependencies might be an indicator of poor desing because it is placing too much responsibility in a single class.
+
+$ METHOD CALL INJECTION
+
+In a similar way to using property setter injection, you might want to invoke a method when application instantiates an object to perfom some initialization that is not convenient to perfom in a constructor.
+
+public class MessageQueue<T>
+{
+	public MessageQueue(StorageAccount account)
+	: this(account, typeof(T).Name.ToLowerInvariant())
+	{}
+	
+	public MessageQueue(StorageAccount account, string queueName)
+	{}
+	
+	public void Initialize(TimeSpan visibilityTimeout, IRetryPolicyFactory retryPolicyFactory) 
+	{}
+	
+	In this example, the Initialize method has one concrete parameter type and one interface parameter type. You can use method injection to provide an instance of the IRetryPolicyFactory type when your dependency injection container constructs an instance of MessageQueue<T>
+	
+	Method call injection is useful when you want to provide some additional information about the context that the object is being used in that can't be passed in as a constructor parameter.
+}
+
+$ WHEN YOU SHOULDN'T USE DEPENDENCY INJECTION
+
+* Dependency injection can be a overkill in a small application, introducing additional complexity and requirements that are not appropriate tor useful.
+* In a large application, it can make it harder to understand the code and what is going on because things happen in other places that you can't immediately see, and yet they can fundamentally affect the bit of code you are trying to read. There are also the practical difficulties of browsing code like trying to find out what a typical implementation of the ITenantStore interface actually does.
+ [Both property setter and method injectionoo may be useful when you need to support legacy code that uses properties and methods to configure instances]
+* You need to carefully consider if an how to introduce dependency injection into a legacy application that was not built with inversion of control in mind. Dependency injection promotes a specific stle of layering and decoupling in a system that may pose challenges if you try to adapt an existing application, especially with an inexperienced team.
+* Dependency injection is far less important in functional in functional as opposed to object-oriented programming. Funcional programming is becoming a more commo approach when testability, fault recovery, and parallelism are key requirements.
+* Type registration and resolving do incur a runtime penalty: very negligible for resolving, but more so for registration. However, the registration should only happen once.
