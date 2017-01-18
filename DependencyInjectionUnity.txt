@@ -1,2 +1,13 @@
 @ DEPENDENCY INJECTION WITH UNITY
 
+Unity Dependency Injection Container
+
+$ The dependency injection lifecycle: Register, Resolve, Dispose
+
+The management class has a constructor that expects to be injected with an object of type ITenantStore. The application mus know at run time which implementation of the ITenantStore interface it should instantiate before it can go ahead and instantiate a Management object.
+
+Something in the application is making a decision about how to instantiate an object that implements the ITenantStore interface. -> REGISTRATION
+Something in the applications is instantiating both that object and the Management object. -> RESOLUTION
+
+The Unity container can manage this register, resolve, dispose cycle making it easy to use dependency injection in your applications. Typically, you perform the registration of the types that require dependency injection in a single method in your application; your should invoke this method early in your application's lifecycle to ensure that the application is aware of all off the dependencies between its classes. You should always try to write container-agnostic code (except for the one place at the root of the application where you configure the container) in order to decouple your application from the specific dependency injection container you are using.
+
