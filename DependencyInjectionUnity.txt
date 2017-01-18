@@ -39,3 +39,7 @@ When the management variable goes out of scope and becomes eligible for garbage 
 $Registering and resolving in your code
 The motivation for loosely coupled desing and dependency injection was maintainability. For this, dependency injection can help to create more maintainable solutions is by describing, in a single location, how to compose your application from all of its constituent classes and components. From the perspective of Unity, this is the type registration information. Therefore, it makes sense to group all of the type registration together in a single method that you invoke very early on in your application's lifecycle; usually, directly in the application's entry point.
 Typically, you can call the Resolve method when you need an instance of a particular type in your application
+
+You should perform all the registrations in a single location in your code or in a configuration file. This makes it easy to manage the dependencies in your application. In a highly modular application, each module might be responsible for its own registration and manage its own container.
+
+Using a configuration file for registrations can be a brittle and error prone solution. It can also lead to the illusion that this configuration can be changed without proper testing. Consider which settings, if any need to be configurable after your solution is deployed.
