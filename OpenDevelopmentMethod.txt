@@ -1,0 +1,35 @@
+https://opendevelopmentmethod.org/
+# OPEN DEVELOPMENT METHOD
+
+$ BEYON AGILE
+
+A variety of software development methodologies, frameworks and practices have evolved over the years, each with their own recognized strengths and weaknesses.
+
+Startups and businesses with workforces that used to be small and localized are now more globalized with employees collaborating with each other from multiple countries and time zones. In addition to a newly evolved workforce, the technologies and languages we have available to us in the workplace are going through their own evolutions, enabling businesses to operate in newer and  more energetic ways. As the world continues to evolve around us, it makes sens that our software development methods should evolve, too.
+
+$ WHY
+
+The Open Development Method is a summary of lessons learned in leading large teams around Agile, Scrum, Waterfall and other common methodologies. After witnessing those methodologies fall short when unexpected variables get introduced into the mix, especially with teams that are distributed, multi-lingual, and cross-functional( a scenario that many startups teams are experiencing today), I realized that as our global economy continues to grow, traditional notions of centralized workspaces are no longer desired.
+
+Open source in 2015 is ubiquitous. Potentially every person benefiting from modern tecnology is also benefiting from open source solutions in some fashion. When you consider the international pool of developers contributing to the world's most popular open source projects, you have to wonder how they've been able to succeed without the benefit of managers, meetings, and code sprints. Upon researching how open source projects have succeeded, a set of principles that could be considered the tenets  of the open deve method start to emerge.
+
+$ QUALITY
+
+As part of an open development mehtod, code quality is king. You should be asking key question every time you write code:
+
+1 - Is this code legible?
+2 - Is this code testable?
+3 - Is this code modular?
+4 - Is this code economical?
+
+ Every question asked benefits not only you, but your team. When you write code in such a way that another developer half a world away can sit down and start working on it immediately, without needing to ask any questions, you're helping improve your team's efficiency. Likewise, whe you ensure your code is testable, you drastically cut down on the number of roadblocks your team may encounter. with modularity, you present code to your team that is both easily maintained and potentially recyclable for another project. And finally, economical code can save everyone from you team and future contributors, to clients and end-users - both time and money.
+ 
+ $ DOCUMENTATION
+ 
+ The most significant piece of documentation you will write is you high-quality code, but that is not enough. Consider those who do not know the code, and those who have neither the time nor the desire to read it all.
+ 
+ $ TESTING
+ 
+ 
+ 
+ 
