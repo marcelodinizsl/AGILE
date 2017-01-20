@@ -30,6 +30,31 @@ As part of an open development mehtod, code quality is king. You should be askin
  
  $ TESTING
  
+  On a geographically diverse team in which you may not be able to receive help in real time, taking a test-first approach with code allows you to work with greater independence and fewer roadblocks.
  
+ 1 - Unit tests prove that your code actually works.
+ 2 - You get a low-level regression-test suite.
+ 3 - you can improve the design without breaking it.
+ 4 - It's more fun to code with them that without.
+ 5 - They demonstrate concrete progress.
+ 6 - Unit tests are a form of sample code.
+ 7 - It forces you to plan before  you code.
+ 8 - It reduces the cost of bugs.
+ 9 - It's even better than code inspections.
+ 10- It virtually eliminates coder's block.
+ 11- Unit tests make better designs.
+ 12- It's faster than writing code without tests.
+ 
+ $ DISCUSSIONS
+ 
+ Everything is open to discussion, and when everyone is on has a access to one another without needing to go through a chain of command, some of the most ingenious ideas and solutions can be discovered.
+ Alghough a veteran developer may dominate discussions due to their expertise, never disregard the new developer who has different, fresh ideas.
+ 
+ 1 - Be friendly and patient.
+ 2 - Be welcoming
+ 3 - Be considerate
+ 4 - Be respectful
+ 5 - Be careful in the words that we choose
+ 6 - Try to understand why we disagree.
  
  
